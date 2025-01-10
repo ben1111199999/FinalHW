@@ -72,10 +72,11 @@ CopyVITE_APP_API_URL=http://localhost:5000/api
 
 bashCopycd backend
 npm run dev
+
 前端啟動：
 bashCopycd frontend
 npm run dev
-使用說明
+
 使用說明
 
 系統存取
