@@ -34,6 +34,10 @@ Copy# 報名與參加者管理系統
 - MongoDB：資料庫系統
 - JWT：身份驗證機制
 
+系統架構圖
+
+![螢幕擷取畫面 2025-01-10 180530](https://github.com/user-attachments/assets/4621ef4b-599b-47ab-9726-e0f10a9bb93f)
+
 ## 安裝說明
 
 ### 系統需求
