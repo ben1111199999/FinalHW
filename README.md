@@ -49,7 +49,109 @@ git clone [專案網址]
 
 安裝後端依賴
 
-bashC陳伯林林
+bashCopycd backend
+npm install
+
+安裝前端依賴
+
+bashCopycd frontend
+npm install
+
+環境設定
+需在前後端目錄分別建立 .env 檔案：
+
+後端 （.env）：
+CopyMONGODB_URI=mongodb://localhost:27017/event_management
+JWT_SECRET=your_jwt_secret
+PORT=5000
+前端 （.env）：
+CopyVITE_APP_API_URL=http://localhost:5000/api
+
+啟動系統
+後端啟動：
+
+bashCopycd backend
+npm run dev
+前端啟動：
+bashCopycd frontend
+npm run dev
+使用說明
+使用說明
+
+系統存取
+
+
+開啟瀏覽器訪問：http://localhost:5173
+使用提供的測試帳號登入：
+
+管理員帳號：admin / password
+一般用戶：user / password
+
+
+
+
+功能操作
+
+
+管理員功能：
+
+活動管理：可新增、編輯、刪除活動
+參加者管理：審核報名、管理參加者資訊
+系統管理：用戶權限控制
+
+
+一般用戶功能：
+
+活動瀏覽：查看活動詳情
+活動報名：填寫報名資訊
+報名查詢：查看報名狀態
+
+
+
+API 檔
+身份驗證相關：
+
+POST /api/auth/login - 用戶登入
+POST /api/auth/register - 用戶註冊
+
+活動管理：
+
+GET /api/events - 獲取活動列表
+POST /api/events - 新增活動（限管理員）
+PUT /api/events/：id - 更新活動（限管理員）
+DELETE /api/events/：id - 除活動（限管理員）
+
+參加者管理：
+
+GET /api/participants - 獲取參加者列表
+POST /api/participants - 新增報名
+PUT /api/participants/：id - 更新參加者資訊（限管理員）
+DELETE /api/participants/：id - 除參加者記錄（限管理員）
+
+系統特色
+
+安全性
+
+
+JWT 身份驗證
+密碼加密儲存
+權限分級管理
+
+
+使用者體驗
+
+
+響應式設計，支援多種設備
+直覺化操作介面
+即時的操作反饋
+
+
+系統效能
+
+
+資料快取優化
+非同步處理機制
+資料庫查詢優化
 
 版本資訊
 
